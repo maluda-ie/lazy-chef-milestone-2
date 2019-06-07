@@ -11,14 +11,13 @@
     <header>
         <div class="container">
             <img id="logo" src="assets/images/lazy-chef-logo.jpg" alt="lazy chef logo"></img>
-            <h5>The recipe app that helps you</h5>
-            <h6>Save time, avoid waste and spend less</h6>
+            <h4>The recipe app that helps you save time, spend less and avoid waste!</h4>
         </div>
     </header>
     
     <main>
         <!---SEARCH RECIPES--->
-        <div class="container py-5">
+        <div class="container py-5" id="form">
             <form class="form-box" id="search">
                 <div class="form-group row justify-content-center">
                     <div class="col-sm-12 col-md-6">
@@ -31,6 +30,7 @@
                     <div class="col-sm-12 col-md-6">
                         <label for="dietry">Dietry Requirements</label>
                         <select class="form-control" id="dietry-requirements">
+                            <option>none</option>
                             <option>vegan</option>
                             <option>vegetarian</option>
                             <option>keto</option>
@@ -47,10 +47,22 @@
             </form>
         </div>
         
-        <div class="container" id="recipes-container">
+        <div class="container-fluid" id="recipes-container">
+          
+           <div class="row">
+              <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="name"><h5 class="recipe-name"></h5></div>
+                    <div><img class="photo" src=""></img></div>
+                    <ul class="ingredient-lines"></ul>
+              </div>
+            </div>
+            
         </div>
     </main>
-    <!---TEMPLATE--->
+    
+   
+        
+    <!---TEMPLATE --->
     <div style="display:none">
         <div id="recipe-template">
             <div class="name">{recipe-name}</div>
@@ -58,7 +70,7 @@
             <ul class="ingredient-lines"><li>{ingredient-line}</li></ul>
         </div>
     </div>
-    
+   
         
         <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

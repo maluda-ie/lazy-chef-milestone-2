@@ -8,11 +8,31 @@
     height: 200px;
 }
 
+@media only screen and (min-width: 961px) {
+ #logo {
+  display: inline;
+  margin-right: 30px;
+ }
+}
 
-
-h5, 
-h6 {
+@media only screen and (min-width: 961px) {
+ h4 {
+  display: inline;
+  margin-left: 50px;
+ }
+}
+ 
+h4 {
+ display: block;
  text-align: center;
  box-sizing: border-box;
 }
 
+#recipes-container {
+ max-width: 1200px;
+ margin: 0 auto;
+}
+ 
+.name {
+ text-transform: uppercase;
+} 
